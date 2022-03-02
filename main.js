@@ -21,7 +21,6 @@ function update(num){
 		"background-color": ""
 	})
 }
-
 //表示の数字の右側に数字足す
 function add(num){
 	if(document.querySelector('input').value==0){
@@ -66,14 +65,6 @@ function add(num){
 			"pointer-events": "none",
 			"background-color": "darkgrey"
 		})
-		/*
-		本当はここの箇所をコード簡略化のため
-		$('#calbtn').css({
-			"pointer-events": "none",
-			"background-color": "darkgrey"
-		})
-		のみで記述したいが一つしかCSSが反応しないため、idを複数設定しています
-		*/
 	}
 }
 //0を最初に押せなくする
@@ -107,9 +98,6 @@ function add0(num){
 function calc(){
 	const v = document.querySelector( 'input' ).value
 	const f = new Function( 'return ' + v )
-	console.log('V='+v)
-	console.log('F='+f)
-
 	//文字列を計算
   update( f().toString() )
 	//演算子のクリック無効を解除

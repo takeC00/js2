@@ -8,6 +8,7 @@
 }
 table {
     width: 100%;
+    
 }
 
 
@@ -19,6 +20,7 @@ table {
     font-size: 30px;
     text-align:right;
     background-color: rgba(122,122,122,0.2);
+    font-family: 'Courier New', Courier, monospace;
 }
 button{
     width:90%; 
@@ -27,4 +29,9 @@ button{
     border-radius: 15px;
     margin: 0 auto;
     font-size: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+button:hover{
+    cursor: pointer;
+    background-color: darkgrey;
 }
