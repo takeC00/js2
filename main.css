@@ -1,2 +1,30 @@
 @charset "UTF-8";
 
+.cal-body{
+    border: 2px black solid;
+    width:300px;
+    height:470px;
+    background-color: rgba(3, 214, 252, 0.501);
+}
+table {
+    width: 100%;
+}
+
+
+.display{
+    margin: 5% 0;
+    height:60px;
+    width:90%;
+    padding-right: 20px;
+    font-size: 30px;
+    text-align:right;
+    background-color: rgba(122,122,122,0.2);
+}
+button{
+    width:90%; 
+    height: 80px;
+    margin:20px 10px;
+    border-radius: 15px;
+    margin: 0 auto;
+    font-size: 20px;
+}
