@@ -73,7 +73,7 @@ function add(num){
 			"background-color": "darkgrey"
 		})
 		のみで記述したいが一つしかCSSが反応しないため、idを複数設定しています
-
+		*/
 	}
 }
 //0を最初に押せなくする
