@@ -7,7 +7,19 @@ function update(num){
 	$('#calbtn').css({
 		"pointer-events": "",
 		"background-color": ""
-	})	
+	})
+	$('#calbtn2').css({
+		"pointer-events": "",
+		"background-color": ""
+	})
+	$('#calbtn3').css({
+		"pointer-events": "",
+		"background-color": ""
+	})
+	$('#calbtn4').css({
+		"pointer-events": "",
+		"background-color": ""
+	})
 }
 
 //表示の数字の右側に数字足す
@@ -21,15 +33,47 @@ function add(num){
 		"pointer-events": "",
 		"background-color": ""
 	})
+	$('#calbtn2').css({
+		"pointer-events": "",
+		"background-color": ""
+	})
+	$('#calbtn3').css({
+		"pointer-events": "",
+		"background-color": ""
+	})
+	$('#calbtn4').css({
+		"pointer-events": "",
+		"background-color": ""
+	})
 	
 	//最後の文字が演算子の場合演算子をクリックできないようにする
 	let ope = document.querySelector('input').value.slice(-1);
 	console.log(ope);
-	if(ope=='+'||'-'||'*'||'/'){
+	if(ope == "+" || ope == "-" || ope == "*" || ope == "/"){
 		$('#calbtn').css({
 			"pointer-events": "none",
 			"background-color": "darkgrey"
 		})
+		$('#calbtn2').css({
+			"pointer-events": "none",
+			"background-color": "darkgrey"
+		})
+		$('#calbtn3').css({
+			"pointer-events": "none",
+			"background-color": "darkgrey"
+		})
+		$('#calbtn4').css({
+			"pointer-events": "none",
+			"background-color": "darkgrey"
+		})
+		/*
+		本当はここの箇所をコード簡略化のため
+		$('#calbtn').css({
+			"pointer-events": "none",
+			"background-color": "darkgrey"
+		})
+		のみで記述したいが一つしかCSSが反応しないため、idを複数設定しています
+
 	}
 }
 //0を最初に押せなくする
@@ -37,6 +81,23 @@ function add0(num){
 	if(document.querySelector('input').value!=0){
 		document.querySelector('input').value += num
 	}
+	//演算子のクリック無効を解除
+	$('#calbtn').css({
+		"pointer-events": "",
+		"background-color": ""
+	})
+	$('#calbtn2').css({
+		"pointer-events": "",
+		"background-color": ""
+	})
+	$('#calbtn3').css({
+		"pointer-events": "",
+		"background-color": ""
+	})
+	$('#calbtn4').css({
+		"pointer-events": "",
+		"background-color": ""
+	})
 }
 
 
@@ -51,4 +112,21 @@ function calc(){
 
 	//文字列を計算
   update( f().toString() )
+	//演算子のクリック無効を解除
+	$('#calbtn').css({
+		"pointer-events": "",
+		"background-color": ""
+	})
+	$('#calbtn2').css({
+		"pointer-events": "",
+		"background-color": ""
+	})
+	$('#calbtn3').css({
+		"pointer-events": "",
+		"background-color": ""
+	})
+	$('#calbtn4').css({
+		"pointer-events": "",
+		"background-color": ""
+	})
 }
